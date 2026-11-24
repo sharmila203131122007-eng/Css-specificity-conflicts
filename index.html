@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Conflicting Rules</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 class="note">Test 1: Class vs Element</h2>
+
+    <h2 id="heading" class="heading">
+        Test 2: ID vs Class
+    </h2>
+
+    <p class="first">Test 3: Source Order</p>
+
+    <p id="alert" class="alert">Test 4: Important</p>
+
+    <p id="inline" style="color: purple;">
+        Test 5: Inline vs Important
+    </p>
+
+    <div id="parent">
+        Parent
+        <p class="child">Test 6: Inheritance</p>
+    </div>
+
+    <div class="menu">
+        <a class="active">Test 7: Equal Specificity</a>
+    </div>
+
+    <span class="tag" data-role="tag">
+        Test 8: Attribute vs Class
+    </span>
+
+    <p id="box" class="notice">Test 9: ID vs ID + Class</p>
+
+    <ul id="list" class="list">
+        <li>Test 10: ID vs Class</li>
+    </ul>
+
+</body>
+</html>
